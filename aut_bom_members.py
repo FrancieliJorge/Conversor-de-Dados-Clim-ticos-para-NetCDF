@@ -24,12 +24,13 @@ for rod in rodadas:
     for m in members:
         m = str(m).zfill(2)
         m_input = rod.strftime(f"%Y%m%d%H/*_{m}_*.nc")
-        m_output = rod.strftime(f"%Y%m%d%H/member{m}.nc")
+        m_output = rod.strftime("%Y%m%d%H/BOM_PREC_{m}_%Y%m%d%H.nc".format(m=m))
         if not os.path.isfile(m_output):
             cmd = f'cdo mergetime {m_input} {m_output}'
             print(cmd)
             try:
                 subprocess.check_call(cmd, shell=True)
+                rename_variable(path_out, 'olr', 'prec')
             except:
                 print(f'pass: {cmd}')
         else:
