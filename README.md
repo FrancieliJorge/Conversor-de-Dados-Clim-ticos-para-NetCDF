@@ -1,7 +1,7 @@
 
 # Conversor de Dados Climáticos 
 
-Este repositório contém um script Python que automatiza a conversão de arquivos `.ctl` para o formato NetCDF (`.nc`) e os combina para cada membro de um conjunto de previsões. O script é projetado para trabalhar com dados climáticos, nesse caso para datas de 1 de novembro de 1999 a 16 de março de 2011, processando arquivos para o dia 1 e 16 de cada mês.
+Este repositório contém um script Python que automatiza a conversão de arquivos `.ctl` para o formato NetCDF (`.nc`) e os combina para cada membro de um conjunto de previsões. O script é projetado para trabalhar com dados climáticos, nesse caso (um exemplo) para datas de 1 de novembro de 1999 a 16 de março de 2011, processando arquivos para o dia 1 e 16 de cada mês.
 
 ## Requisitos
 
